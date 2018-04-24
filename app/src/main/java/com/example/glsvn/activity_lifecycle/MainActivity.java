@@ -41,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this,"onDestroy event",Toast.LENGTH_SHORT).show();
     }
 
+    //called when activity is in restart
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Toast.makeText(this,"onRestart event",Toast.LENGTH_SHORT).show();
+    }
+    
     //called when activity is in create
     @Override
     protected void onCreate(Bundle savedInstanceState) {
